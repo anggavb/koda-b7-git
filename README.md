@@ -61,3 +61,35 @@ $ git revert [commit_code]
 ```sh
 $ git reset [commit_code]
 ```
+
+## 9. Branching
+- ``branch``
+```sh
+$ git branch [option] [argument]
+```
+```sh
+# list branch
+$ git branch
+# create new branch
+$ git branch [branch_name]
+# rename branch
+$ git branch [-m|-M] [old_branch] [new_branch]
+# copy branch
+$ git branch [-c|-C] [source_branch] [dest_branch]
+# delete branch
+$ git branch [-d|-D] [branch_name]
+```
+- ``checkout``
+```sh
+# moving between branch
+$ git checkout [dest_branch]
+# moving to branch (and create it if not exists)
+$ git checkout -b [branch_name]
+# moving between commit
+$ git checkout [commit_code]
+```
+- ``merge``
+```sh
+# you have to move to destination branch first
+$ git merge [source_branch...]
+```
